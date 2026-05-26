@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Company Training Portal</title>
+<title>Interior Services Training Center</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -356,7 +356,7 @@ html,body{height:100%;font-family:var(--fb);font-size:15px;line-height:1.6;overf
   <nav class="tnav">
     <div class="tnav-brand">
       <div class="tnav-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-      <div><div class="tnav-name">Company Training Portal</div><div class="tnav-sub">Select your department to begin training</div></div>
+      <div><div class="tnav-name">Interior Services Training Center</div><div class="tnav-sub">Select your department to begin training</div></div>
     </div>
     <div class="tnav-right">
       <span class="nbadge" id="home-progress-badge">0 depts started</span>
@@ -365,7 +365,7 @@ html,body{height:100%;font-family:var(--fb);font-size:15px;line-height:1.6;overf
   <div id="screen-home-scroll" style="flex:1;overflow-y:auto">
     <div class="home-inner">
       <div class="home-hero">
-        <div class="home-eyebrow">Company Training Portal</div>
+        <div class="home-eyebrow">Interior Services Training Center</div>
         <div class="home-title">Select Your <span>Department</span></div>
         <div class="home-desc">Click your department to view training slides and complete the knowledge check. Complete all modules to earn your department certificate.</div>
       </div>
@@ -1148,7 +1148,7 @@ function printReport(){
     <div class="pr-sec">Question-by-Question Breakdown</div>
     <div class="pr-grid">${rows}</div>
     <div class="pr-sig"><div class="pr-sig-it">Employee Signature</div><div class="pr-sig-it">Supervisor / Manager</div><div class="pr-sig-it">Date Filed</div></div>
-    <div class="pr-ft"><span>Company Training Portal · ${dept?.name} · ${qdata.title}</span><span>${quizFinalScore}/${qdata.questions.length} (${pctPct}%)</span></div>`;
+    <div class="pr-ft"><span>Interior Services Training Center · ${dept?.name} · ${qdata.title}</span><span>${quizFinalScore}/${qdata.questions.length} (${pctPct}%)</span></div>`;
   window.print();
 }
 
@@ -1166,7 +1166,7 @@ function printCertificate(){
 
   document.getElementById('print-cert').innerHTML=`
     <div class="cert-page" style="position:relative">
-      <div class="cert-logo-line">Company Training Portal</div>
+      <div class="cert-logo-line">Interior Services Training Center</div>
       <div class="cert-headline">This is to certify that</div>
       <div class="cert-name-line" id="cert-name-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
       <div class="cert-body">
@@ -1182,7 +1182,7 @@ function printCertificate(){
         <div class="cert-sig-it"><div style="height:24px"></div><div class="cert-sig-line">Training Supervisor</div></div>
         <div class="cert-sig-it"><div style="height:24px"></div><div class="cert-sig-line">Date</div></div>
       </div>
-      <div class="cert-watermark">Company Training Portal · ${today}</div>
+      <div class="cert-watermark">Interior Services Training Center · ${today}</div>
     </div>`;
 
   // Ask for employee name then print
